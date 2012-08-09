@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/gohachi/!svn/ver/1962/branches/hachi-branches/CI-Hachi/application/config/db_scripts
+END
+hachi_db.sql
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/gohachi/!svn/ver/1962/branches/hachi-branches/CI-Hachi/application/config/db_scripts/hachi_db.sql
+END
+autocomplete.sql
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/gohachi/!svn/ver/1939/branches/hachi-branches/CI-Hachi/application/config/db_scripts/autocomplete.sql
+END
+tankauth_schema.sql
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/gohachi/!svn/ver/1884/branches/hachi-branches/CI-Hachi/application/config/db_scripts/tankauth_schema.sql
+END

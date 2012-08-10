@@ -1,3 +1,4 @@
+<?php $this->load->view("/elements/header") ?>
 <?php
 $email = array(
 	'name'	=> 'email',
@@ -17,3 +18,4 @@ $email = array(
 </table>
 <?php echo form_submit('send', 'Send'); ?>
 <?php echo form_close(); ?>
+<?php $this->load->view("/elements/footer") ?>

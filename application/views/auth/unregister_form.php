@@ -1,3 +1,4 @@
+<?php $this->load->view("/elements/header") ?>
 <?php
 $password = array(
 	'name'	=> 'password',
@@ -15,3 +16,4 @@ $password = array(
 </table>
 <?php echo form_submit('cancel', 'Delete account'); ?>
 <?php echo form_close(); ?>
+<?php $this->load->view("/elements/footer") ?>

@@ -6,7 +6,7 @@ class Register extends CI_Controller {
 	{	
 		$data = array(
 			'title' => 'Tagit | Register',
-			'heading' => 'Admin Panel'
+			'heading' => 'Registration'
 		);
 		$this->load->view('register/index', $data);
 	}

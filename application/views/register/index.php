@@ -1,6 +1,8 @@
 <?php $this->load->view("/elements/header") ?>
 
-	<p>1. Register as a User</p>		
-	<p>2. Register as an Organization</p>		
+	<p>Register as an Organization</p>		
+
+	<p>Email <input type="text" /></p>
+
 
 <?php $this->load->view("/elements/footer"); ?>

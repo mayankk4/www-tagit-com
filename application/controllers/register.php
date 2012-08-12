@@ -6,29 +6,10 @@ class Register extends CI_Controller {
 	{	
 		$data = array(
 			'title' => 'Tagit | Register',
-			'heading' => 'Registration'
+			'heading' => 'Registrater as Organization'
 		);
 		$this->load->view('register/index', $data);
 	}
-
-	public function users()
-	{	
-		$data = array(
-			'title' => 'Tagit | Register',
-			'heading' => 'Register as a User'
-		);
-		$this->load->view('register/user', $data);
-	}
-
-	public function organization()
-	{	
-		$data = array(
-			'title' => 'Tagit | Register',
-			'heading' => 'Register as Organization'
-		);
-		$this->load->view('register/organization', $data);
-	}
-
 
 }
 

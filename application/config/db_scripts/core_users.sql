@@ -79,7 +79,6 @@ CREATE TABLE IF NOT EXISTS `organizations_users` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `organization_id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
-  `expires` timestamp NOT NULL DEFAULT '2012-12-12 00:00:00' ,
   PRIMARY KEY (`id`),
   FOREIGN KEY (organization_id) REFERENCES organizations(id) ON DELETE CASCADE,
   FOREIGN KEY (user_id) REFERENCES central_users(id) ON DELETE CASCADE

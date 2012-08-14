@@ -1,15 +1,13 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 
 /**
- * Hachi_Email_Assistant
- *
- * Authentication library for Code Igniter.
+ * Tagit_email_assistant
  *
  * @author		Mayank Kandpal
  * @version		1.0
  */
 
-class Hachi_Email_Assistant{
+class Tagit_email_assistant{
 
     var $admin_emails = array(
             "mayankk4@gmail.com"

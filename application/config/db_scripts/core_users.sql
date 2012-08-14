@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS `central_users` (
   `facebook_id` varchar(50) NOT NULL,
   `creation_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
 # Create table bands
@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS `bands` (
   `band_id` varchar(50) NOT NULL,
   `is_allocated` boolean DEFAULT false,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
 
@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `organizations` (
   `subdomain_url` varchar(100) DEFAULT NULL,
   `creation_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
 # Create table readers
@@ -51,7 +51,7 @@ CREATE TABLE IF NOT EXISTS `readers` (
   `reader_id` varchar(50) NOT NULL,
   `is_allocated` boolean DEFAULT false,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
 
@@ -67,7 +67,7 @@ CREATE TABLE IF NOT EXISTS `users_bands` (
   PRIMARY KEY (`id`),
   FOREIGN KEY (user_id) REFERENCES central_users(id) ON DELETE CASCADE,
   FOREIGN KEY (band_id) REFERENCES bands(id) ON DELETE CASCADE
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
 # Create table organizations_users
@@ -82,7 +82,7 @@ CREATE TABLE IF NOT EXISTS `organizations_users` (
   PRIMARY KEY (`id`),
   FOREIGN KEY (organization_id) REFERENCES organizations(id) ON DELETE CASCADE,
   FOREIGN KEY (user_id) REFERENCES central_users(id) ON DELETE CASCADE
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
 # Create table organizations_readers
@@ -97,4 +97,4 @@ CREATE TABLE IF NOT EXISTS `organizations_readers` (
   PRIMARY KEY (`id`),
   FOREIGN KEY (organization_id) REFERENCES organizations(id) ON DELETE CASCADE,
   FOREIGN KEY (reader_id) REFERENCES readers(id) ON DELETE CASCADE
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
